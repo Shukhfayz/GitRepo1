@@ -15,6 +15,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
                 "json:target/cucumber-reports/CucumberTestReport.json",
                 "rerun:target/cucumber-reports/rerun.txt"
         })
-public class TestNGRunner  extends AbstractTestNGCucumberTests {
+public class TestNGRunner extends AbstractTestNGCucumberTests {
 
 }
