@@ -1,0 +1,4 @@
+base\TestBase.class
+pages\LoginPage.class
+utilities\TakeScreenshot.class
+utilities\PropertiesFileReader.class

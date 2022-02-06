@@ -75,7 +75,8 @@
           </suiteXmlFiles>
           </configuration>
         </plugin>
-        <plugin>
+        
+        <!--  <plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
 				<version>3.15.0</version>
@@ -87,7 +88,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>Cucumber-java</projectName>  <!-- Replace with project name -->
+							<projectName>Cucumber-java</projectName>
 							 <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
 							<buildNumber>1</buildNumber>
@@ -95,7 +96,13 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
       </plugins>
      </build>
+     
+   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 </project>

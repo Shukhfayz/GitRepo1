@@ -1,5 +1,8 @@
 package testRunners;
 
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -11,12 +14,6 @@ public class Listeners implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		System.out.print("Test started");
-		String name = result.getName();
-		try {
-			TakeScreenshot.getscreenshot(name);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -24,12 +21,15 @@ public class Listeners implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		String name = result.getName();
-		try {
-			TakeScreenshot.getscreenshot(name);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		String name = result.getName();
+		
+//			try {
+//				TakeScreenshot.captureScreenShot();
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+		System.out.println("Test Failed");
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -46,6 +46,7 @@ public class Listeners implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
+		System.out.println("On Finish");
 	}
 
 }
