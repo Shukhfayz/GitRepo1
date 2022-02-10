@@ -2,18 +2,18 @@ pipeline {
 	agent any
 	
 	stages {
-		stage "Build" {
+		stage ("Build") {
 		
 			echo "Build is successful"
 		
 		}
-		stage "Test"{
+		stage ("Test") {
 		
 			echo "Test is successful"
 		
 		}
 		
-		stage "Deploy" {
+		stage ("Deploy") {
 		
 			echo "Deployment is successful"
 		
