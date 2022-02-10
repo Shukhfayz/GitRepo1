@@ -3,19 +3,30 @@ pipeline {
 	
 	stages {
 		stage ("Build") {
+			
+			steps {
 		
-			echo "Build is successful"
+				echo "Build is successful"
+			}
 		
 		}
 		stage ("Test") {
+			
+			steps {
 		
-			echo "Test is successful"
+				echo "Test is successful"
+				
+			}
 		
 		}
 		
 		stage ("Deploy") {
-		
-			echo "Deployment is successful"
+			
+			steps {
+				
+				echo "Deployment is successful"
+				
+			}
 		
 		}
 	}
